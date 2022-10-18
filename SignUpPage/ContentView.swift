@@ -9,11 +9,39 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack(spacing: 0){
+                Image(systemName: "edge.png")
+                    .font(.system(size:160))
+                Spacer()
+                NavigationLink(destination: Text("로그인 화면"),
+                    label: {
+                    HStack{
+                        Spacer()
+                        Text("로그인 하러가기")
+                        Spacer()
+                    }
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .clipShape(RoundedRectangle(cornerRadius: 6))
+                })
+                NavigationLink(destination: Text("회원가입 화면"),
+                    label: {
+                    HStack{
+                        Spacer()
+                        Text("회원가입 하러가기")
+                        Spacer()
+                    }
+                    .padding()
+                    .background(Color.black)
+                    .foregroundColor(.white)
+                    .clipShape(RoundedRectangle(cornerRadius: 6))
+                })
+            }
+        }
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
