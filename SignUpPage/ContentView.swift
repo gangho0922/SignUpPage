@@ -26,18 +26,7 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .clipShape(RoundedRectangle(cornerRadius: 6))
                 })
-                NavigationLink(destination: Text("회원가입 화면"),
-                    label: {
-                    HStack{
-                        Spacer()
-                        Text("회원가입 하러가기")
-                        Spacer()
-                    }
-                    .padding()
-                    .background(Color.black)
-                    .foregroundColor(.white)
-                    .clipShape(RoundedRectangle(cornerRadius: 6))
-                })
+                
             }
         }
     }
