@@ -13,5 +13,6 @@ struct SignUpPageApp: App {
         WindowGroup {
             ContentView()
         }
+            
     }
 }
