@@ -18,7 +18,7 @@ struct ContentView: View {
                     label: {
                     HStack{
                         Spacer()
-                        Text("로그인 하러가기")
+                        Text("로그인 하러오세요")
                         Spacer()
                     }
                     .padding()
